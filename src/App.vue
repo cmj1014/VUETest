@@ -1,0 +1,43 @@
+<template>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About test</router-link> |
+      <router-link to="/main">Main</router-link> |
+      <router-link to="/usedMain">used-Main</router-link> |
+      <router-link to="/componentsList">组件案例</router-link> |
+      <router-link to="/plugList">插件案例</router-link> |
+      <router-link to="/vueList">vue相关</router-link> |
+      <router-link to="/goToVueCli">vueCli脚手架效果</router-link>
+      
+    </div>
+    <router-view class="routerView"/>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  height: 100%;
+	
+  
+}
+html, body{
+  height: 100%;
+}
+.routerView {
+height: 100%;
+  }
+</style>

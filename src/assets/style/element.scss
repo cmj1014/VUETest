@@ -1,0 +1,69 @@
+.el-input {
+  width: 200px;
+}
+.el-input__inner {
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+}
+/* .el-button {
+  background-color: #3399ff;
+  font-size: 13px;
+  width: auto;
+  padding: 5px 10px;
+} */
+.el-dialog{
+  border-radius: 6px;
+}
+.el-dialog__header{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 30px;
+  color: #000;
+  background-color: #F2F2F2;
+  .el-dialog__title{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .el-dialog__headerbtn,
+  .el-dialog__close {
+    color: #000;
+    font-weight: bold;
+  }
+}
+.dialogInit{
+  color: #333;
+}
+.el-scrollbar__wrap{
+  overflow-x: hidden;
+}
+.el-message-box__container{
+  word-wrap: break-word;
+  word-break: normal;
+}
+.el-drawer__header{
+  font-size: 18px;
+  color: #888;
+  font-weight: bold;
+  margin-bottom:0;
+}
+.el-breadcrumb__inner{
+  cursor: pointer !important;
+}
+i.el-select__caret {
+  /*很关键：将默认的select选择框样式清除*/
+  // appearance: none;
+  // -moz-appearance: none;
+  // -webkit-appearance: none;
+  // /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  // padding-right: 0;
+  // /*自定义图片*/
+  // background: url("../img/arrow-up-bold.png") no-repeat scroll right center transparent;
+  // /*自定义图片的大小*/
+  // background-size: 12px 12px;
+}
+
+/*将小箭头的样式去去掉*/
+.el-icon-arrow-up:before {
+  // content: '';
+}
