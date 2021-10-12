@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cityId:"3100",cityName:"shanghai",tabbarFlag:true
+    cityId:"3100",cityName:"shanghai",tabbarFlag:true,indexFlag:true
   },
   mutations: {
     changeCityName(state,name){
@@ -17,6 +17,13 @@ export default new Vuex.Store({
     },
     hideTab(state) {
       state.tabbarFlag = false
+    },
+    showIndexTab(state) {
+      state.indexFlag = true
+    },
+    hideIndexTab(state) {
+      console.log("hideIndexTab")
+      state.indexFlag = false
     }
   },
   actions: {

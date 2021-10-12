@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" v-if="$store.state.indexFlag">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About test</router-link> |
       <router-link to="/main">Main</router-link> |
@@ -9,7 +9,7 @@
       <router-link to="/plugList">插件案例</router-link> |
       <router-link to="/vueList">vue相关</router-link> |
       <router-link to="/goToVueCli">vueCli脚手架效果</router-link>
-      
+      <router-link to="/phone">手机模块</router-link>
     </div>
     <router-view class="routerView"/>
   </div>
@@ -29,7 +29,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   height: 100%;
 	
   
