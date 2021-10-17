@@ -13,6 +13,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import vueSwiper from 'vue-awesome-swiper'
 import VueBus from 'vue-bus'
 const echarts = require('echarts')
+import Vant from 'vant';
+import 'vant/lib/index.css';
 
 
 // import './assets/style/table.scss' /*引入公共表单样式*/
@@ -29,7 +31,7 @@ import ElBigdataTable from '../static/vue-elementui-bigdata-table.js'
 
 // Vue.use(BScroll)
 // Vue.component('BScroll', BScroll)
-
+Vue.use(Vant);
 Vue.use(ElBigdataTable)
 Vue.use(VueVirtualScroller)
 Vue.component('RecycleScroller', VueVirtualScroller.RecycleScroller)

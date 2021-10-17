@@ -60,6 +60,12 @@ const routes = [
       component: () =>
         import("../views/phone/index.vue")
     },
+	{
+      path: "/maoyan",
+      name: "maoyan",
+      component: () =>
+        import("../views/myan/index.vue")
+    },
     
     
     
@@ -73,7 +79,7 @@ const router = new VueRouter({
 
 //路由守卫
 router.beforeEach((to,from,next)=>{
-  const auth = ["/phone"];
+  const auth = ["/phone","/maoyan"];
   if (auth.indexOf(to.fullPath)>-1){
     console.log("需要处理")
     //  next("/login");

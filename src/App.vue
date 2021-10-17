@@ -10,6 +10,8 @@
       <router-link to="/vueList">vue相关</router-link> |
       <router-link to="/goToVueCli">vueCli脚手架效果</router-link>
       <router-link to="/phone">手机模块</router-link>
+	  <router-link to="/maoyan">手机猫眼</router-link>
+	  
     </div>
     <router-view class="routerView"/>
   </div>
@@ -22,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped="scoped">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,13 +32,22 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100%;
-	
+	padding: 0;
+	margin: 0;
   
 }
 html, body{
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 .routerView {
 height: 100%;
+  }
+  /* //移动端使用 */
+  @media screen and (max-width: 400px) {
+      #app  {
+          font-size: 200px;
+      }
   }
 </style>
